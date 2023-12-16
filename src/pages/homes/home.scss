@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home_page {
+    width: 100%;
+    height: auto;
+
+    //của header
+    .home_navbar {
+        
+        width: 100%;
+        // height: auto;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        .home_navbar_content {
+            width: 100%;
+            max-width: 1440px;
+            height: 100%;
+        }
+    }
+
+    //của body
+    .home_page_container {
+        background-color: rgb(241, 251, 247);
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        min-height: 100vh;
+        .home_container_content {
+            
+            width: 100%;
+            max-width: 1440px;
+        }
+    }
+
+    //của footer
+    .home_footer {
+        // width: 100%;
+        // min-height: 200px;
+        // display: flex;
+        // justify-content: center;
+
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/testfirebase-d283a.appspot.com/o/products%2Fsection-bg.jpg?alt=media&token=ef78f485-7725-49a0-b000-0f0113749bd3&_gl=1*iym3nv*_ga*MTExNDg3OTg4OC4xNjg5Nzg4MTUx*_ga_CW55HF8NVT*MTY5NjE0MjA5MC4xMS4xLjE2OTYxNDM0MzAuMTEuMC4w");
+
+        .home_footer_content {
+            
+            // width: 100%;
+            // max-width: 1440px;
+            // height: 100%;
+        }
+    }
+}

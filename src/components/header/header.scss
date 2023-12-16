@@ -1,0 +1,212 @@
+ion-icon {
+    cursor: pointer;
+    display: block;
+    color: rgb(102, 197, 204);
+}
+
+ion-icon:hover {
+    opacity: 0.8;
+    // font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+
+//====================================
+.header-action-btn {
+    position: relative;
+    font-size: 24px;
+
+}
+
+.header-action-btn .span {
+    position: absolute;
+    top: -12px;
+    right: -6px;
+    font-size: small;
+    display: grid;
+    place-items: center;
+    color: rgb(102, 197, 204);
+}
+
+.header-action-btn .span:hover {
+    opacity: 0.8;
+
+}
+
+//====================================
+
+.home_navbar {
+    color: white;
+    background-color: #00001F;
+
+    .img_logo {
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        // background-color: coral;
+        //     margin-left: 50px;
+        color: white;
+        display: flex;
+        gap: 30px;
+
+        .dropdown-menu{
+            li{
+                // background-color: aqua;
+                // display: flex;
+                // text-align: center;
+                .dropdown-menu-link{
+                    display: block;
+                    margin-left: 40px;
+                    text-decoration: none;
+                }
+                
+
+            }
+        }
+
+
+        .icon_danhmuc,
+        .desc_danhmuc {
+            color: rgb(102, 197, 204);
+            font-weight: 600;
+            
+            // color: aliceblue;
+        }
+
+        .desc_danhmuc:is(:hover, :focus) {
+            // color: aliceblue;
+        color: rgb(102, 197, 204);
+
+
+        }
+
+        .btn_nav_find {
+
+            display: flex;
+
+            input {
+                width: 500px;
+            }
+        }
+    }
+
+
+}
+
+//=======btn search=========================
+.btn_search {
+    font-size: large;
+    font-weight: 500;
+    max-width: max-content;
+    color: hsl(0, 0%, 100%);
+    border: 3px solid rgb(102, 197, 204);
+    background-color: rgb(102, 197, 204);
+    display: inline-block;
+    text-align: center;
+    padding: 4px 10px;
+    cursor: pointer;
+    // border-radius: 5px;    
+}
+
+.btn_search:active {
+    transform: translateY(5px);
+    box-shadow: red;
+}
+
+.btn_search:is(:hover, :focus) {
+    background-color: #00001E;
+    border: 3px solid rgb(102, 197, 204);
+    color: rgb(102, 197, 204);
+}
+
+.btn_search:hover {
+    background-color: #00001E;
+    border: 3px solid rgb(102, 197, 204);
+    color: rgb(102, 197, 204);
+}
+
+//======btn logout và btn_login====================
+.btn_logout,
+.btn_login,
+.btn_admin {
+    font-size: small;
+    font-weight: 500;
+    max-width: max-content;
+    color: hsl(0, 0%, 100%);
+    border: 3px solid rgb(102, 197, 204);
+    background-color: rgb(102, 197, 204);
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_logout:active,
+.btn_login:active,
+.btn_admin:active {
+    transform: translateY(5px);
+    box-shadow: red;
+}
+
+.btn_logout:is(:hover, :focus),
+.btn_login:is(:hover, :focus),
+.btn_admin:is(:hover, :focus) {
+    background-color: #00001E;
+    border: 3px solid rgb(102, 197, 204);
+    color: rgb(102, 197, 204);
+}
+
+.btn_logout:hover,
+.btn_login:hover,
+.btn_admin:hover {
+    background-color: #00001E;
+    border: 3px solid rgb(102, 197, 204);
+    color: rgb(102, 197, 204);
+}
+
+//========================
+.navbar-toggler,
+.navbar-toggler-icon {
+    background-color: rgb(102, 197, 204);
+    color: rgb(102, 197, 204);
+}
+
+
+
+.icon_nav {
+    // background-color: brown;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+
+    ion-icon {
+        font-size: 22px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+}
+
+.login_user {
+    // background-color: chartreuse;
+    display: flex;
+    align-items: center;
+}
+
+.logout_user {
+    display: flex;
+    gap: 20px;
+}
+
+.span_logout {
+    // background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+}
+

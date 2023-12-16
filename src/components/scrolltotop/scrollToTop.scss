@@ -1,0 +1,24 @@
+/* CSS to hide the Scroll To Top button by default */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #66C5CC;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ion-icon{
+        color: white;
+        font-size: 40px;
+    }
+    display: none; /* Initially hide the button */
+
+  }
+  
+  .scroll-to-top:hover {
+    // background-color: #66C5CC;
+    opacity: 0.8;
+  }

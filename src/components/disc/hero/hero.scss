@@ -1,0 +1,36 @@
+.home_hero{
+    display: flex;
+    width: 1440px;
+    gap: 5px;
+    // background-image: url("https://firebasestorage.googleapis.com/v0/b/testfirebase-d283a.appspot.com/o/products%2Fhero-bg.jpg?alt=media&token=4659abfd-724a-4491-8878-29ea4f025296&_gl=1*14oatd*_ga*MTExNDg3OTg4OC4xNjg5Nzg4MTUx*_ga_CW55HF8NVT*MTY5NjQxMzY2NS4xNy4xLjE2OTY0MTM3MDkuMTYuMC4w");
+
+    .home_hero_carousel{
+        width: 1000px;
+        height: 500px;
+        
+        img{
+            // width: 200px;
+            // height: 200px;
+            width: 1000px;
+            height: 500px;
+        }
+    }
+    .home_hero_img{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 440px;
+        img{
+            height: 121px;
+            cursor: pointer;
+            transition: 1s ease;
+        }
+        img:hover{
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            transition: 1s ease;
+        }
+
+    }
+}

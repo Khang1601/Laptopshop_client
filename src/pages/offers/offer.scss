@@ -1,0 +1,111 @@
+/*-----------------------------------*\
+  #OFFER
+\*-----------------------------------*/
+
+.offer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 60px;
+
+    
+    .section-subtitle {
+        font-size: 2.5rem;
+        font-weight: bolder;
+
+        background-image: linear-gradient(to right,
+                #54b3d6,
+                #54b3d6 50%,
+                #000 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section-subtitle:before {
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section-subtitle:hover {
+        background-position: 0;
+    }
+
+    h3:hover::before {
+        width: 100%;
+    }
+
+
+    .section-title {
+        font-size: 2.4rem;
+        color: hsl(184, 57%, 44%);
+        margin-block: 20px 30px;
+    }
+    .section-text{
+        font-size: 1.3rem;
+    }
+
+    .countdown-list {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        // margin-block: 25px 40px;
+
+
+        .countdown-time {
+            font-size: 1.8rem;
+            margin-block-end: 8px;
+        }
+    }
+
+    .btn {
+        padding-block: 12px;
+        margin-inline: auto;
+    }
+
+    .btn {
+        background: var(--btnbg);
+        color: var(--btnfontcolor);
+        fill: #ffffff;
+        text-decoration: none;
+        outline: 0;
+        //  box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25); 
+        border-radius: 100px;
+        border: none;
+    }
+    
+    .btn:hover {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+    .btn-check:focus+.btn,
+    .btn:focus {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+    
+    .btn:active:focus {
+        box-shadow: 0 0 0 0.25rem var(--btnactivefs);
+    }
+    
+    .btn:active {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+}
+

@@ -1,0 +1,114 @@
+.feature {
+    padding-block: 0;
+    // background-color: chocolate;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    .grid-list {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+
+        align-items: center;
+        justify-content: center;
+
+        .feature-card {
+            background-color: rgb(179, 179, 179);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+
+            gap: 25px;
+            background-color: #030128;
+            height: 130px;
+
+            .card-icon {
+                // width: 50px;
+                // flex-shrink: 0;
+                
+            }
+            
+            .card-icon:hover {
+                animation: shake-lr 0.5s both;
+            }
+
+            .card-title {
+                // margin-block-end: 5px;
+                font-weight: 600;
+                background-image: linear-gradient(to right,
+                #54b3d6,
+                #54b3d6 50%,
+                #ffffff 50%);
+                background-size: 200% 100%;
+                background-position: -100%;
+                display: inline-block;
+                padding: 5px 0;
+                position: relative;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .card-title:before {
+                content: '';
+                background: #54b3d6;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                transition: all 0.3s ease-in-out;
+                
+            }
+        
+            .card-title:hover {
+                background-position: 0;
+            }
+        
+            .card-title:hover::before {
+                width: 100%;
+            }
+
+            .card-text{
+                font-size: 18px;
+                color: white;
+
+            }
+        }
+    }
+
+}
+
+
+@keyframes shake-lr {
+
+    0%,
+    100% {
+        transform: rotate(0);
+        transform-origin: 50% 50%;
+    }
+
+    10%,
+    90% {
+        transform: rotate(4deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-6deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(6deg);
+    }
+
+    80% {
+        transform: rotate(-4deg);
+    }
+}
+
