@@ -21,7 +21,6 @@ const receiptSlice = createSlice({
             }
         },
 
-
         //------------------------------
         deleteReceipt: function(state, action) {
             return {
