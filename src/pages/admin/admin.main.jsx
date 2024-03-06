@@ -23,12 +23,12 @@ const items = [
     //     label: "Back to Home",
         
     // },
-    {
-        key: Date.now() * Math.random(),
-        icon: `${import.meta.env.VITE_SERVER_HOST}imgs/user.png`,
-        label: "User Manager",
-        url: "user-manager"
-    },
+    // {
+    //     key: Date.now() * Math.random(),
+    //     icon: `${import.meta.env.VITE_SERVER_HOST}imgs/user.png`,
+    //     label: "User Manager",
+    //     url: "user-manager"
+    // },
 ];
 
 import { Link } from 'react-router-dom';

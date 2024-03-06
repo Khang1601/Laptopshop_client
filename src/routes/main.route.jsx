@@ -46,7 +46,7 @@ export default <Routes>
     <Route path='/admin' element={LazyFn(() => import('../pages/admin/admin.main'))()} >
         <Route path='product-manager' element={<ProductManager/>}></Route>
         <Route path='category-manager' element={<CategoryManager/>}></Route>
-        <Route path='user-manager' element={<UserManager/>}></Route>
+        {/* <Route path='user-manager' element={<UserManager/>}></Route> */}
     
     </Route>
 
